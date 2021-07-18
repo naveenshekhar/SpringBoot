@@ -1,6 +1,7 @@
 package com.springrest.spring.controller;
 
-import java.awt.List;
+
+import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +19,11 @@ public class MyController {
 	
 	//Get all the courses
 	
-	/*
-	 * public List<Course> getAllCourse() { return null; }
-	 */
+	@GetMapping("/courses")
+	public List<Course> getAllCourse()
+	{
+		return null;
+		
+	}
+
 }
