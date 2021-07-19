@@ -6,6 +6,7 @@ import com.springrest.spring.model.Course;
 
 public interface ICourseService {
 	
+	
 	public List<Course> getAllCourse();
 
 }

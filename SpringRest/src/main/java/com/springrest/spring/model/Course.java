@@ -5,6 +5,14 @@ public class Course {
 	private long id;
 	private String title;
 	private String discription;
+	
+	
+
+	//ToString
+	@Override
+	public String toString() {
+		return "Course [id=" + id + ", title=" + title + ", discription=" + discription + "]";
+	}
 
 	// Constructor
 	public Course(long id, String title, String discription) {
