@@ -24,10 +24,29 @@ public class CourseServiceImpl implements ICourseService {
 
 	@Override
 	public List<Course> getAllCourse() {
-		System.out.println("<<<<<<<<<(2.)CourseServiceImpl :: LIST>>>>>>>> :" + list);
-		// TODO Auto-generated method stub
+		System.out.println("<<<<<<<<<<<(2.) CourseServiceImpl :: LIST>>>>>>>>>>> :" + list);
 		return list;
+	}
 
+	@Override
+	public Course getCourse(long id) {
+		
+		
+
+		Course c = null;
+
+		for (Course course : list) {
+
+			if (course.getId() == id) {
+				c = course;
+				break;
+			}
+
+		}
+		
+		System.out.println("<<<<<<<<<<<(2.) CourseServiceImpl :: Course>>>>>>>>>>> :" + c);
+
+		return c;
 	}
 
 }

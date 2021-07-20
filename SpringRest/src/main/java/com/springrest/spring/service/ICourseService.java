@@ -9,4 +9,6 @@ public interface ICourseService {
 	
 	public List<Course> getAllCourse();
 
+	public Course getCourse(long id);
+
 }
