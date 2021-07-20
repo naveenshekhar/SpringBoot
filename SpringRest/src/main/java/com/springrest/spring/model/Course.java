@@ -5,14 +5,6 @@ public class Course {
 	private long id;
 	private String title;
 	private String discription;
-	
-	
-
-	//ToString
-	@Override
-	public String toString() {
-		return "Course [id=" + id + ", title=" + title + ", discription=" + discription + "]";
-	}
 
 	// Constructor
 	public Course(long id, String title, String discription) {
@@ -20,6 +12,19 @@ public class Course {
 		this.id = id;
 		this.title = title;
 		this.discription = discription;
+	}
+
+	// Constructor using super class
+
+	public Course() {
+		super();
+	
+	}
+
+	// ToString
+	@Override
+	public String toString() {
+		return "Course [id=" + id + ", title=" + title + ", discription=" + discription + "]";
 	}
 
 	// Getter Setter

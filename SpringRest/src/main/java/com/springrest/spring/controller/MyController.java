@@ -12,6 +12,7 @@ import com.springrest.spring.service.ICourseService;
 @RestController
 public class MyController {
 
+	@Autowired
 	private ICourseService courseService;
 
 	@GetMapping("/home")
@@ -23,8 +24,10 @@ public class MyController {
 
 	@GetMapping("/courses")
 	public List<Course> getAllCourse() {
+		
+		System.out.println("<<<<<<<<<<<(1.)Controller :: Get All Course >>>>>>>>>>");
 
-		return courseService.getAllCourse();
+		return this.courseService.getAllCourse();
 
 	}
 
