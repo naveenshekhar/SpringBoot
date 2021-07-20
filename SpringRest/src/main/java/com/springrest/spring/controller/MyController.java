@@ -12,7 +12,6 @@ import com.springrest.spring.service.ICourseService;
 @RestController
 public class MyController {
 
-	@Autowired
 	private ICourseService courseService;
 
 	@GetMapping("/home")
